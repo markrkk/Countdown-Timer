@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left, #00f5d4, transparent 30%),
+        radial-gradient(circle at bottom right, #ff006e, transparent 35%),
+        linear-gradient(135deg, #030014, #12002f, #240046);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 760px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(0, 245, 212, 0.35);
+    border-radius: 28px;
+    padding: 45px;
+    text-align: center;
+
+    box-shadow:
+        0 0 25px rgba(0, 245, 212, 0.25),
+        0 0 60px rgba(255, 0, 110, 0.18);
+
+    backdrop-filter: blur(14px);
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 8px 18px;
+    margin-bottom: 22px;
+
+    border-radius: 30px;
+    background-color: rgba(0, 245, 212, 0.15);
+    color: #00f5d4;
+
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 44px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.descripcion {
+    color: #e0f7fa;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.formulario {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 14px;
+    border: 2px solid rgba(0, 245, 212, 0.35);
+
+    background-color: rgba(3, 0, 20, 0.8);
+    color: white;
+
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00f5d4;
+    box-shadow: 0 0 15px rgba(0, 245, 212, 0.45);
+}
+
+button {
+    padding: 15px 22px;
+    border: none;
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #ff006e, #fb5607);
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 0 25px rgba(255, 0, 110, 0.45);
+}
+
+.contador {
+    padding: 28px;
+    border-radius: 22px;
+
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 2px solid rgba(255, 255, 255, 0.12);
+
+    font-size: 34px;
+    font-weight: bold;
+    color: #00f5d4;
+
+    text-shadow: 0 0 12px rgba(0, 245, 212, 0.8);
+}
+
+@media (max-width: 650px) {
+    .card {
+        padding: 32px 22px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .formulario {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .contador {
+        font-size: 24px;
+    }
+}
